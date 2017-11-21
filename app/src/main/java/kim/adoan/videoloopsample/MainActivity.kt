@@ -8,14 +8,12 @@ import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.extractor.mp4.Mp4Extractor
 import com.google.android.exoplayer2.source.ExtractorMediaSource
 import com.google.android.exoplayer2.source.LoopingMediaSource
-import com.google.android.exoplayer2.source.MediaSource
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
 import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DataSpec
 import com.google.android.exoplayer2.upstream.RawResourceDataSource
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,8 +45,7 @@ class MainActivity : AppCompatActivity() {
                 })
             }
 
-
-    private fun getMediaSource(rawVideoId: Int): MediaSource? {
+    private fun getMediaSource(rawVideoId: Int): ExtractorMediaSource? {
         val uri = RawResourceDataSource.buildRawResourceUri(rawVideoId)
 
         val dataSource = RawResourceDataSource(this)
