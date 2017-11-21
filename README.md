@@ -1,6 +1,9 @@
 Video Loop Sample
 =================
-Sample app for playing looping videos with ExoPlayer `2.5.4`
+Sample app that uses ExoPlayer (`2.5.4`) to play videos with the following modes:
+  - Scale fit with crop
+  - Resize zoom
+  - Looping
 
 | Portrait  | Landscape |
 | ------------- | ------------- |
