@@ -15,7 +15,6 @@ import com.google.android.exoplayer2.upstream.DataSpec
 import com.google.android.exoplayer2.upstream.RawResourceDataSource
 import kotlinx.android.synthetic.main.activity_main.*
 
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +44,6 @@ class MainActivity : AppCompatActivity() {
                     mediaSource
                 })
             }
-
 
     private fun getMediaSource(rawVideoId: Int): ExtractorMediaSource? {
         val uri = RawResourceDataSource.buildRawResourceUri(rawVideoId)
